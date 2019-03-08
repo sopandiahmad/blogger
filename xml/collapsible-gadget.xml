@@ -1,0 +1,3 @@
+<h2 id='judularsip' onclick='ShowArsip()' style='cursor:pointer;border-bottom:1px solid black;'><data:title/><span style='float:right;' id='arrowarsip'>&#8659;</span></h2>
+<div id='arsip' style='display:block;'>
+</div>

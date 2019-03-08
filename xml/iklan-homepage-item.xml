@@ -1,0 +1,17 @@
+<b:if cond='data:blog.pageType != &quot;error_page&quot; and data:blog.pageType != &quot;static_page&quot;'>
+<script async='async' src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'/>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({
+google_ad_client: &quot;ca-pub-xxxxxxxxxxxxxxxx&quot;,
+enable_page_level_ads: true
+});
+</script>
+</b:if>
+    
+<b:if cond='data:blog.url == data:blog.homepageUrl or data:blog.pageType == &quot;item&quot;'>
+<ins class='adsbygoogle adstop' data-ad-client='ca-pub-xxxxxxxxxxxxxxxx' data-ad-slot='xxxxxxxxxx' data-full-width-responsive='true'/>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+<ins class='adsbygoogle toplinkads' data-ad-client='ca-pub-xxxxxxxxxxxxxxxx' data-ad-format='link' data-ad-slot='xxxxxxxxxx' data-full-width-responsive='true'/>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</b:if>

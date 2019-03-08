@@ -1,0 +1,13 @@
+<b:if cond='data:blog.pageType == &quot;error_page&quot;'>
+<div class="main">
+<h2>Tidak Ada<br/>Konten</h2>
+<p>Mohon maaf, tidak ada konten yang dapat ditampilkan. Silakan kembali ke <a style="font-weight:bold;" href="/">BERANDA</a> atau telusuri konten yang kamu cari melalui kolom di bawah.</p>
+
+<form action="/search" method="get">
+<input type="search" name="q" placeholder="Cari di sini"/>
+</form>
+</div>
+
+<b:else/>
+
+</b:if>

@@ -1,0 +1,29 @@
+<b:if cond='data:blog.pageType != &quot;item&quot; and data:blog.pageType != &quot;static_page&quot;'>
+<b:if cond='data:blog.url == data:blog.homepageUrl'>
+<h1 class='logo'><data:blog.title/></h1>
+<b:else/>
+<h1 class='logo'><a expr:href='data:blog.homepageUrl'><data:blog.title/></a></h1>
+</b:if>
+<b:else/>
+<span class='logo'><a expr:href='data:blog.homepageUrl'><data:blog.title/></a></span>
+</b:if>
+
+<b:if cond='data:post.title'>
+<b:if cond='data:post.link or (data:post.url and data:blog.url != data:post.url)'>
+<h2 class='post-title entry-title' itemprop='name'><a expr:href='data:post.link ? data:post.link : data:post.url'><data:post.title/></a></h2>
+<b:else/>
+
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<div class='main-post'/>
+</b:if>
+
+<b:loop values='data:post.labels' var='label'>
+<div class='breadcrumb' itemscope='itemscope' itemtype='http://data-vocabulary.org/Breadcrumb'>
+<a expr:href='data:label.url' itemprop='url'><span itemprop='title'><data:label.name/></span></a>
+</div>
+<b:if cond='not data:label.isLast'>/</b:if>
+</b:loop>
+
+<h1 class='post-title entry-title' itemprop='name'><data:post.title/></h1>
+</b:if>
+</b:if>

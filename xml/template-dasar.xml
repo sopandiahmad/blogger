@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
+    <b:include data='blog' name='all-head-content'/>
+    <title>
+      <b:if cond='data:blog.pageType == "index"'>
+        <data:blog.pageTitle/>
+        <b:else/>
+        <b:if cond='data:blog.pageType != "error_page"'>
+          <b:if cond='data:blog.pageType == "archive"'>
+            Arsip <data:blog.pageName/>
+            <b:else/>
+            <data:blog.pageName/>
+          </b:if>
+          <b:else/>
+          Tidak Ada Konten
+        </b:if>
+      </b:if>
+    </title>
+    <b:skin>
+      <![CDATA[]]>
+    </b:skin>
+  </head>
+  <body>
+    <div class='wrapper'>
+      <article class='main duakolom'>
+        <b:section class='post' id='post' preferred='yes' showaddelement='no'>
+          <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='1'>
+          </b:widget>
+        </b:section>
+      </article>
+        <b:section class='namakelas' id='namaidentitas' maxwidgets='' showaddelement='yes'>
+        </b:section>
+    </div>
+  </body>
+</html>
