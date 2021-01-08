@@ -1,1 +1,7 @@
-
+html{background-color:lightgray;margin:0 auto;max-width:960px;}
+body{background-color:white;margin:20px 0;}
+header{height:120px;background:gray;padding:15px 20px 0;}
+.judulweb{border-collapse:collapse;}
+.main{margin:0 310px 0 0;float:left;}
+aside{width:300px;float:right;margin:0 0 0 -310px;}
+footer{background:gray;padding:0 20px;margin:0;line-height:40px;}
