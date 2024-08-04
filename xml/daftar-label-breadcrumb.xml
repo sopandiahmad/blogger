@@ -1,11 +1,11 @@
 <b:loop values='data:post.labels' var='label'>
 <a expr:href='data:label.url' rel='tag'><data:label.name/></a>
-<b:if cond='not data:label.isLast'>,</b:if>
+<b:if cond='not data:label.isLast'>/</b:if>
 </b:loop>
 
 <b:loop values='data:post.labels' var='label'>
-<div class='breadcrumb' itemscope='itemscope' itemtype='http://data-vocabulary.org/Breadcrumb'>
-<a expr:href='data:label.url' itemprop='url'><span itemprop='title'><data:label.name/></span></a>
+<div class='breadcrumb'>
+<a expr:href='data:label.url'><data:label.name/></a>
 </div>
 <b:if cond='not data:label.isLast'>/</b:if>
 </b:loop>
